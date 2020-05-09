@@ -14,7 +14,7 @@ envioCep.onclick = function (){
             method:"GET",
 
             }
-            fetch('https://viacep.com.br/ws/'+cep.value+'/json/', config)
+            fetch('https://viacep.com.br/ws/'+this.value+'/json/', config)
             .then(function(resposta){
             return resposta.json();
             }).then(function(json){
